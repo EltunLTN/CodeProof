@@ -55,7 +55,7 @@ export function CodeEditor({
             ...current,
             focusChanges: current.focusChanges + 1,
             sessions: current.sessions + 1,
-            timeline: [...current.timeline, { at: current.totalTimeMs, length: value.length, kind: "focus" }].slice(-24),
+            timeline: [...current.timeline, { at: current.totalTimeMs, length: value.length, kind: "focus" as const }].slice(-24),
           });
           return false;
         },
