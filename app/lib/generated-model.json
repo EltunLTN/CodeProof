@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "trained_at": "2026-07-16T07:00:38.921073+00:00",
+  "purpose": "Local supporting estimate of AI-style probability; not proof of authorship.",
+  "model_type": "standardized_logistic_regression",
+  "feature_names": [
+    "paste_ratio",
+    "large_insertion_rate",
+    "edit_ratio",
+    "active_seconds_per_100_chars",
+    "lexical_polish",
+    "genericity",
+    "too_fast",
+    "is_explanation"
+  ],
+  "scaler_mean": [
+    0.4778564053,
+    0.4116281868,
+    0.153087858,
+    0.4612829284,
+    0.3395639628,
+    0.18,
+    0.3225,
+    0.4941666667
+  ],
+  "scaler_scale": [
+    0.3098470975,
+    0.3196826052,
+    0.1212255785,
+    0.3617963215,
+    0.2401339069,
+    0.3841874542,
+    0.4674331503,
+    0.4999659711
+  ],
+  "coefficients": [
+    1.6650403743,
+    3.1719444226,
+    -0.9706612072,
+    -1.3989126943,
+    1.2940161353,
+    0.5926975345,
+    1.1436561748,
+    -0.6470360625
+  ],
+  "intercept": 0.2880839931,
+  "threshold": 0.5,
+  "training_samples": 1600,
+  "random_seed": 42,
+  "validation": {
+    "samples": 400,
+    "accuracy": 0.9925,
+    "roc_auc": 0.9998,
+    "log_loss": 0.0242
+  }
+}
