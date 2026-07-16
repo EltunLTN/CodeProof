@@ -104,7 +104,7 @@ export function CodeEditor({
           const elapsed = lastChangeAt.current ? now - lastChangeAt.current : 0;
           const paused = elapsed > 5_000;
           const pasted = pastePending.current;
-          const kind = deleted > 0 && inserted === 0 ? "delete" : pasted ? "paste" : "type";
+          const kind: ActivityPoint["kind"] = deleted > 0 && inserted === 0 ? "delete" : pasted ? "paste" : "type";
           const nextMetrics: ActivityMetrics = {
             ...current,
             typedCharacters: current.typedCharacters + (pasted ? 0 : inserted),
